@@ -1,0 +1,5 @@
+<h2>{program_name} {program_version}</h2>
+
+<p>(C) 2022 by Camiel Bouchier (camiel@bouchier.be)</p>
+
+<p>See <a href='https://camiel.bouchier.be/en/cb_outlook'>camiel.bouchier.be</a> for more info and help.</p>

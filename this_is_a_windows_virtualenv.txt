@@ -1,0 +1,2 @@
+This is a Windows virtualenv for Python.
+Scripts\activate under a Windows prompt.
