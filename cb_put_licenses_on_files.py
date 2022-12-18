@@ -159,7 +159,7 @@ if __name__ == '__main__':
     logger.info("Starting {}".format(program_name))
 
     dir_todo = '.'
-    extensions_todo = ['', '.py', '.spec', '.nsi']
+    extensions_todo = ['', '.py', '.spec', '.bat']
     regex_exclude = [
         r'.*/.git.*',
         r'.*/__pycache__/.*',

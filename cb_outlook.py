@@ -64,7 +64,7 @@ from cb_dialog     import cb_dialog
 #---------------------------------------------------------------------------------------------------
 
 program_name    = "cb_outlook"
-program_version = "1.0.0"
+program_version = "1.0.1"
 company_name    = "cb_soft"
 domain_name     = "camiel.bouchier.be"
 

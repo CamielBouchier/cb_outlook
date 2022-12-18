@@ -6,3 +6,4 @@ Lib/
 plugins/
 *.exe
 *.swp
+*.zip

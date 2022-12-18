@@ -1,1 +1,33 @@
+@ECHO OFF
+
+REM
+REM $BeginLicense$
+REM
+REM (C) 2022 by Camiel Bouchier (camiel@bouchier.be)
+REM
+REM This file is part of cb_outlook.
+REM All rights reserved.
+REM You are granted a non-exclusive and non-transferable license to use this
+REM software for personal or internal business purposes.
+REM
+REM THIS SOFTWARE IS PROVIDED "AS IS" AND
+REM ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+REM WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+REM DISCLAIMED. IN NO EVENT SHALL Camiel Bouchier BE LIABLE FOR ANY
+REM DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+REM (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+REM LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+REM ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+REM (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+REM SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+REM
+REM $EndLicense$
+REM
+REM *****
+REM
+REM This bat file builds the cb_outlook distribution.
+REM
+
 Scripts\pyinstaller.exe --noconfirm --distpath dist_windows --workpath build_windows  cb_outlook.spec
+cd dist_windows
+"c:\Program Files\7-Zip\7z.exe" a ..\cb_outlook.zip cb_outlook
