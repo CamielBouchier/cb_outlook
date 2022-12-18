@@ -110,7 +110,8 @@ class cb_mainwindow(QMainWindow):
 
         self.ui.date_edit_start_date.dateChanged.connect(self.app.cb_on_start_date_changed)
         self.ui.date_edit_end_date.dateChanged.connect(self.app.cb_on_end_date_changed)
-        self.ui.text_edit_message.textChanged.connect(self.app.cb_on_message_changed)
+        self.ui.text_edit_message.textChanged.connect(
+                lambda: self.app.cb_on_message_changed(self.ui.text_edit_message.toPlainText()))
         self.ui.pushbutton_empty_now.clicked.connect(self.app.cb_on_empty_now)
 
     #-----------------------------------------------------------------------------------------------
